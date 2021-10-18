@@ -1,0 +1,25 @@
+.loginForm{
+    width: 35%;
+    margin-left: 30px;
+}
+.loginForm button{
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    font-weight: 600;
+    background-color: #13718A;
+    color:white;
+    border:none;
+    height: 42px;
+
+}
+.loginForm input{
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.or{
+    opacity:.7;
+}

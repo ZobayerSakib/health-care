@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import Services from './pages/Services/Services';
 import Program from './pages/Program/Program';
 import Footer from './pages/Footer/Footer';
+import Login from './pages/Login/Login';
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
           <Route path='/program'>
             <Program></Program>
           </Route>
+          <Route path='/login'>
+            <Login></Login>
+          </Route>
+
         </Switch>
         <Footer></Footer>
       </Router>
