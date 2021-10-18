@@ -18,5 +18,12 @@
     font-size: 50px;
 }
 .bannerInfo h2,p{
-    color:white;
+    color:#8b7e52;
+}
+
+.singleService{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 12px;
+  
 }

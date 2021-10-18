@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Dental Disease",
+        "image": "https://i.ibb.co/vqCNTJL/Little-girl-checking-up-her-sight-at-ophthalmology-center.jpg",
+        "description": "Dental and oral health is an essential part of your overall health and well-being. Poor oral hygiene can lead to dental cavities and gum disease, and has also been linked to heart disease, cancer, and diabetes."
+    },
+    {
+        "id": "2",
+        "name": "Mental Health",
+        "image": "https://i.ibb.co/DCv5F0L/mental-health.jpg",
+        "description": "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood"
+    },
+    {
+        "id": "3",
+        "name": "Injury and Violence",
+        "image": "https://i.ibb.co/chB3ydz/injury.png",
+        "description": "Injuries can be caused by accidents or acts of violence, and may occur at home, work, or play. They can be due to impact from blunt objects or from objects that penetrate the body. Common types of injury include abrasions, lacerations, hematomas, broken bones, joint dislocations, sprains, strains, and burns"
+    },
+    {
+        "id": "4",
+        "name": "Overweight and Obesity",
+        "image": "https://i.ibb.co/k8rmsw4/overweight.jpg",
+        "description": "The higher the BMI, the greater the risk of developing additional health problems. A healthy weight is considered to be a BMI of 24 or less. A BMI of 25 to 29.9 is considered overweight. A BMI of 30 and above is considered obese"
+    },
+    {
+        "id": "5",
+        "name": "Tobacco",
+        "image": "https://i.ibb.co/ccjHwLS/tobacco-treatment.jpg",
+        "description": "There are effective treatments that support tobacco cessation, including both behavioral therapies and FDA-approved medications. FDA-approved pharmacotherapies include various forms of nicotine replacement therapy as well as bupropion and varenicline."
+    },
+    {
+        "id": "6",
+        "name": "AIDS",
+        "image": "https://i.ibb.co/cwbs0fW/aids.jpg",
+        "description": "The most effective treatment for HIV is antiretroviral therapy (ART). This is a combination of several medicines that aims to control the amount of virus in your body. Antiretroviral medicines slow the rate at which the virus grows"
+    }
+]
