@@ -10,6 +10,8 @@ import Footer from './pages/Footer/Footer';
 import Login from './pages/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Training from './pages/Training/Training';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 
 function App() {
   return (
@@ -34,10 +36,13 @@ function App() {
               <Program></Program>
             </PrivateRoute>
             <Route path='/training'>
-
+              <Training></Training>
             </Route>
             <Route path='/login'>
               <Login></Login>
+            </Route>
+            <Route path='*'>
+              <ErrorPage></ErrorPage>
             </Route>
           </Switch>
           <Footer></Footer>

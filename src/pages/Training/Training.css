@@ -1,0 +1,58 @@
+.commonDesign{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin-bottom: 40px;
+
+}
+.commonDesign button{
+    margin-left: 10px;
+    background-color:#13718A ;
+    padding:6px;
+    color:white;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 20px;
+    height: 50px;
+    width: 140px;
+}
+.training-header{
+text-align: center;
+margin: 10px;
+}
+
+.trainingPartInfo{
+display: grid;
+ grid-template-columns: repeat(3,1fr);
+ margin-left: 20px;
+ margin-top: 20px;
+}
+.trainingPartHeader{
+    margin-left: 20px;
+}
+.trainingPartHeader h4{
+border-bottom: 3px solid #13718A;
+width: 300px;
+padding: 4px;
+border-radius: 6px;
+}
+.trainingPartHeader h4:hover{
+border: 3px solid #13718A;
+width: 300px;
+padding: 4px;
+border-radius: 6px;
+}
+
+/* ---------------------Responsive part of Training section ------------------
+------------------------------------------------------------------------------*/
+@media only screen and (max-width:688px) {
+    .trainingPartInfo{
+        display: grid;
+         grid-template-columns: repeat(1,1fr);
+         margin-left: 30px;
+        
+        }
+        .training-header{
+            text-align: center;
+            margin: 30px;
+            }
+}
+

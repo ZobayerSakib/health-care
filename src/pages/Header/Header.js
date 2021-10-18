@@ -6,18 +6,23 @@ const Header = () => {
     const { user, signOutGoogle } = useAuth();
     return (
         <div className='pageHeader'>
-            <nav>
-                <NavLink to='/home'>Home</NavLink>
-                <NavLink to='/about'>About</NavLink>
-                <NavLink to='/services'>Services</NavLink>
-                <NavLink to='/program'>Program</NavLink>
-                <NavLink to='/training'>Training</NavLink>
-                <span className='text-white'> {user.displayName} </span>
-                {user.email ? <button onClick={signOutGoogle} className='headerButton'>Sign Out</button>
-                    : <Link to='/login'>LOGIN</Link>
+            <nav className='d-flex justify-content-between'>
+                <div className='siteName'>
+                    <h1>Health Care24.com</h1>
 
-                }
+                </div>
+                <div>
+                    <NavLink to='/home'>Home</NavLink>
+                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/services'>Services</NavLink>
+                    <NavLink to='/program'>Program</NavLink>
+                    <NavLink to='/training'>Training</NavLink>
+                    <span className='text-white'> {user.displayName} </span>
+                    {user.email ? <button onClick={signOutGoogle} className='headerButton'>Sign Out</button>
+                        : <Link to='/login'>LOGIN</Link>
 
+                    }
+                </div>
             </nav>
 
         </div>

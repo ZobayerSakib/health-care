@@ -1,3 +1,8 @@
+.siteName h1{
+    color:#ffbcbc;
+    margin-top: 9px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .pageHeader{
 background-color: #13718A;
 padding-left:15px ;
@@ -22,6 +27,6 @@ padding-left:15px ;
 /* -------------------PageHeader link hover ----------------------
 ------------------------------------------------------------------*/
 .pageHeader a:hover{
-    border-left: 3px solid red;
+    border-left: 6px solid #ffbcbc;
     padding: 5px;
 }
