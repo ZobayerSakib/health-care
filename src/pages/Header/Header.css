@@ -30,3 +30,11 @@ padding-left:15px ;
     border-left: 6px solid #ffbcbc;
     padding: 5px;
 }
+/* -------------------Responsive part of Header Section ----------------------
+------------------------------------------------------------------*/
+@media only screen and (max-width:850px) {
+    .nav{
+        display:flex;
+        flex-direction: column;
+    }
+}

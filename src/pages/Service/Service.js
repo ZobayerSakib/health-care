@@ -10,7 +10,7 @@ const Service = (props) => {
                     <img className='imgStyle' width='200px' height='200px' src={image} alt="" />
                 </div>
                 <p className='mt-3'>{description}</p>
-                <button className='w-100 btn btn-outline-danger'>Details about {name}</button>
+                <button className='w-100 btn btn-danger'>Details about {name}</button>
             </div>
         </div>
     );

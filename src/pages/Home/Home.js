@@ -12,7 +12,7 @@ const Home = () => {
                 <div className='bannerInfo'>
                     <h1>Health Care24</h1>
                     <h2>Your care is our dedication</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eligendi aspernatur similique recusandae optio veritatis neque accusantium esse odio! Ipsam voluptatem inventore qui recusandae perspiciatis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eligendi aspernatur similique recusandae optio veritatis neque </p>
                 </div>
             </div>
 

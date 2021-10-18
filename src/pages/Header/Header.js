@@ -6,14 +6,13 @@ const Header = () => {
     const { user, signOutGoogle } = useAuth();
     return (
         <div className='pageHeader'>
-            <nav className='d-flex justify-content-between'>
+            <nav className='d-flex justify-content-between nav'>
                 <div className='siteName'>
                     <h1>Health Care24.com</h1>
 
                 </div>
                 <div>
                     <NavLink to='/home'>Home</NavLink>
-                    <NavLink to='/about'>About</NavLink>
                     <NavLink to='/services'>Services</NavLink>
                     <NavLink to='/program'>Program</NavLink>
                     <NavLink to='/training'>Training</NavLink>

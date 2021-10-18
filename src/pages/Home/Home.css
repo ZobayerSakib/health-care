@@ -25,5 +25,28 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 12px;
+    margin-left: 65px;
   
+}
+
+/* -------------------Responsive part of Home Page Section ---------
+------------------------------------------------------------------*/
+@media only screen and (max-width:850px) {
+    .homeBanner{
+        background-image: url('../../Images/page-banner.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 320px;
+    }
+    .bannerInfo{
+        font-size: 12px;
+    }
+    .singleService{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 12px;
+        text-align: center;
+        margin-left: 75px;
+      
+    }
 }
