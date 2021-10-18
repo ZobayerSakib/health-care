@@ -1,0 +1,22 @@
+*{margin:0;padding:0}
+.homeBanner{
+    background-image: url('../../Images/page-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+/*---------------------- Banner Information part----------------------
+---------------------------------------------------------------------- */
+.bannerInfo{
+    width: 50%;
+    margin-left: 30px;
+    padding-top: 40px;
+}
+.bannerInfo h1{
+    color:#970c0c;
+    font-size: 50px;
+}
+.bannerInfo h2,p{
+    color:white;
+}
