@@ -8,35 +8,41 @@ import Services from './pages/Services/Services';
 import Program from './pages/Program/Program';
 import Footer from './pages/Footer/Footer';
 import Login from './pages/Login/Login';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path='/'>
-            <Home></Home>
-          </Route>
-          <Route path='/home'>
-            <Home></Home>
-          </Route>
-          <Route exact path='/about'>
-            <About></About>
-          </Route>
-          <Route path='/services'>
-            <Services></Services>
-          </Route>
-          <Route path='/program'>
-            <Program></Program>
-          </Route>
-          <Route path='/login'>
-            <Login></Login>
-          </Route>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
+            <Route exact path='/about'>
+              <About></About>
+            </Route>
+            <Route path='/services'>
+              <Services></Services>
+            </Route>
+            <PrivateRoute path='/program'>
+              <Program></Program>
+            </PrivateRoute>
+            <Route path='/training'>
 
-        </Switch>
-        <Footer></Footer>
-      </Router>
+            </Route>
+            <Route path='/login'>
+              <Login></Login>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
