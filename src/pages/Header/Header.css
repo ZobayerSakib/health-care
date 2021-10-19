@@ -1,5 +1,6 @@
 .siteName h1{
-    color:#ffbcbc;
+    color:white;
+    text-shadow: 4px 5px 3px #ff0000;
     margin-top: 9px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

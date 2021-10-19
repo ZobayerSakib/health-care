@@ -10,9 +10,11 @@ const Home = () => {
             <div className='homeBanner'>
 
                 <div className='bannerInfo'>
-                    <h1>Health Care24</h1>
+                    {/* <h1>Health Care24</h1> */}
                     <h2>Your care is our dedication</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eligendi aspernatur similique recusandae optio veritatis neque </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eligendi aspernatur similique recusandae</p>
+                    <br />
+                    <button className='bannerButton'>Our Programs</button>
                 </div>
             </div>
 

@@ -8,7 +8,7 @@ const Header = () => {
         <div className='pageHeader'>
             <nav className='d-flex justify-content-between nav'>
                 <div className='siteName'>
-                    <h1>Health Care24.com</h1>
+                    <h1>Health Care24</h1>
 
                 </div>
                 <div>

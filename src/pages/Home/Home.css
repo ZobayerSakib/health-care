@@ -14,13 +14,24 @@
     padding-top: 40px;
 }
 .bannerInfo h1{
-    color:#970c0c;
+    color:#0c7d97;
     font-size: 50px;
 }
 .bannerInfo h2,p{
     color:#8b7e52;
 }
+.bannerButton{
+    width: 196px;
+    height: 51px;
+    background-color: #79B530;
+    color:white;
+    font-weight: 600;
+    border:2px solid white;
+    border-radius: 7px;
+}
+.bannerButton:hover{
 
+}
 .singleService{
     display: grid;
     grid-template-columns: repeat(3,1fr);
