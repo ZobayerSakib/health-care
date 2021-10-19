@@ -1,6 +1,25 @@
+.serviceDivDesign{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .imgTransfer{
     text-align: center;
 }
 .imgStyle{
     border-radius: 50%;
+    transition-duration: 2s;
+    opacity: .6;
+}
+.imgStyle:hover{
+    opacity: 1;
+    transform: rotate(360deg);
+    border:2px solid #13718A;
+}
+.serviceDivDesign button{
+    width: 238px;
+    height: 50px;
+    background-color: #13718A;
+    color:white;
+    font-weight: 600;
+    border:1px solid white;
+    border-radius: 5px;
 }

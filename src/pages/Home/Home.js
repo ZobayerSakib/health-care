@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
 import Service from '../Service/Service';
 import './Home.css'
@@ -14,7 +15,11 @@ const Home = () => {
                     <h2>Your care is our dedication</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eligendi aspernatur similique recusandae</p>
                     <br />
-                    <button className='bannerButton'>Our Programs</button>
+                    {
+                        <Link to='/program'>
+                            <button className='bannerButton'>Our Programs</button>
+                        </Link>
+                    }
                 </div>
             </div>
 
