@@ -1,4 +1,38 @@
 .pageFooter{
     background-color: #13718A;
     color:white;
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 40px;
+}
+.footerDesign{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:space-between;
+}
+.footerDesign a{
+    margin-left: 20px;
+    text-decoration: none;
+    color:white;
+}
+.footerUnderLine{
+    border-bottom: 5px solid white;
+    padding: 10px;
+}
+.footerGoogleMap{
+    text-decoration: none;
+    color:white;
+}
+
+/* -------------------------Responsive part of footer Section-----------------
+------------------------------------------------------------------------------- */
+@media only screen and (max-width:850px) {
+    .footerDesign{
+        display: flex;
+        flex-direction: column;
+        margin-top: 14px;
+    }
+    .pageFooter{
+        text-align: center;
+    }
 }
