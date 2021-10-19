@@ -11,7 +11,7 @@ const Service = (props) => {
                     <img className='imgStyle' width='200px' height='200px' src={image} alt="" />
                 </div>
                 <p className='mt-3'>{description}</p>
-                <button >Details about {name}</button>
+                <button  >Details about {name}</button>
             </div>
         </div>
     );

@@ -1,6 +1,11 @@
+.createFont{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .loginForm{
-    width: 35%;
-    margin-left: 30px;
+    width: 360px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 2px 2px #13718a
 }
 .loginForm button{
     width: 100%;

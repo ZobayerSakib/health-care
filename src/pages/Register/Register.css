@@ -1,0 +1,33 @@
+.registerForm{
+    width: 360px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 2px 2px #13718a;
+}
+.registerForm h4{
+    color:#13718a;
+}
+.registerForm input{
+    width:300px;
+    border-radius: 6px;
+    height: 35px;
+    padding-left:10px ;
+    
+}
+.registerForm button{
+    width: 300px;
+    height: 44px;
+    color:white;
+    border-radius: 6px;
+    border:1px solid white;
+    background-color: #13718A;
+}
+.registerForm p{
+    opacity: .8;
+}
+
+.hrStyle{
+    margin: auto;
+    width: 200px;
+    padding: 1.5px;
+}

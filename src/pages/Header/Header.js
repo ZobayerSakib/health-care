@@ -13,9 +13,10 @@ const Header = () => {
                 </div>
                 <div>
                     <NavLink to='/home'>Home</NavLink>
-                    <NavLink to='/services'>Services</NavLink>
+                    <NavLink to='/details'>Details</NavLink>
                     <NavLink to='/program'>Program</NavLink>
                     <NavLink to='/training'>Training</NavLink>
+                    <NavLink to='/register'>Register</NavLink>
                     <span className='text-white'> {user.displayName} </span>
                     {user.email ? <button onClick={signOutGoogle} className='headerButton'>Sign Out</button>
                         : <Link to='/login'>LOGIN</Link>

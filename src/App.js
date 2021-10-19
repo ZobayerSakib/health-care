@@ -3,7 +3,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './pages/Header/Header';
 import Home from './pages/Home/Home';
-import Services from './pages/Services/Services';
 import Program from './pages/Program/Program';
 import Footer from './pages/Footer/Footer';
 import Login from './pages/Login/Login';
@@ -11,6 +10,8 @@ import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Training from './pages/Training/Training';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
+import Details from './pages/Details/Details';
+import Register from './pages/Register/Register';
 
 function App() {
   return (
@@ -25,14 +26,17 @@ function App() {
             <Route path='/home'>
               <Home></Home>
             </Route>
-            <Route path='/services'>
-              <Services></Services>
+            <Route path='/details/:serviceId'>
+              <Details></Details>
             </Route>
             <PrivateRoute path='/program'>
               <Program></Program>
             </PrivateRoute>
             <Route path='/training'>
               <Training></Training>
+            </Route>
+            <Route path='/register'>
+              <Register></Register>
             </Route>
             <Route path='/login'>
               <Login></Login>
