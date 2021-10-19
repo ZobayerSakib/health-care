@@ -1,0 +1,8 @@
+.errorPageDesign{
+    text-align: center;
+}
+.errorPageDesign h1{
+    font-size: 114px;
+    opacity: .5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
