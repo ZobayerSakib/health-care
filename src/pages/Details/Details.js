@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Details = () => {
-    let { serviceId } = useParams();
+    const { serviceId } = useParams();
+    console.log(serviceId)
+    const [detail, setDetail] = useState([]);
+    useEffect(() => {
+        const url = (`services.json${serviceId}`)
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setDetail(data))
+    }, [])
+
     return (
         <div>
-            <h2>G Details{serviceId}</h2>
+            <p>{detail}</p>
+            <Link to='/home'>Go Back</Link>
+
         </div>
     );
 };

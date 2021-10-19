@@ -1,8 +1,10 @@
 import React from 'react';
 import 'animate.css';
 import './Service.css'
+import { Link } from 'react-router-dom';
 const Service = (props) => {
-    const { name, image, description } = props.service;
+    const { id, name, image, description } = props.service;
+    const url = `/details/${id}`
     return (
         <div className='serviceDivDesign mt-4 mb-4 m-3'>
             <div className='w-75'>
@@ -11,7 +13,7 @@ const Service = (props) => {
                     <img className='imgStyle' width='200px' height='200px' src={image} alt="" />
                 </div>
                 <p className='mt-3'>{description}</p>
-                <button  >Details about {name}</button>
+                <Link to={url}>Details about {name}{id}</Link>
             </div>
         </div>
     );
