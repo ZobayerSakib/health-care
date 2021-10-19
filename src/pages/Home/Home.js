@@ -13,7 +13,7 @@ const Home = () => {
                 <div className='bannerInfo'>
                     {/* <h1>Health Care24</h1> */}
                     <h2>Your care is our dedication</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eligendi aspernatur similique recusandae</p>
+                    <p> A healthy individual is a person who is physically, mentally, and socially well balanced. And the balance factor may vary from person to person.</p>
                     <br />
                     {
                         <Link to='/program'>

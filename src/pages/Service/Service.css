@@ -14,11 +14,23 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     transform: rotate(360deg);
     border:2px solid #13718A;
 }
-.serviceDivDesign a{
-    text-decoration: none;
+.serviceDivDesign button{
+    
+    margin-top:6px;
+    padding:12px;
     background-color: #13718A;
-    color:white;
+  
     font-weight: 600;
     border:1px solid white;
     border-radius: 5px;
+}
+.serviceDivDesign a{
+    text-decoration: none;
+    color:white;
+}
+
+@media only screen and (max-width:850px) {
+    .serviceDivDesign a{
+     width: 100%;
+    }
 }

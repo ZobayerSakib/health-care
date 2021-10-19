@@ -15,29 +15,37 @@ const Training = () => {
             <div className='trainingPartInfo'>
                 <div  >
                     <h5>*Training Program for Human Resource Development of CBHC (2011-2022)</h5>
-                    <li>Upazila Health System</li>
-                    <li>Medical Waste Management</li>
-                    <li>Urban Health</li>
-                    <li>Refresher training for the CHCPs</li>
-                    <li>CHCP Training on Data collection format</li>
-                    <li>Refresher training for the CHCPs</li>
-                    <li>HA & FWA Training</li>
-                    <li>Training on different level supervisors</li>
+                    <ul>
+                        <li>Upazila Health System</li>
+                        <li>Medical Waste Management</li>
+                        <li>Urban Health</li>
+                        <li>Refresher training for the CHCPs</li>
+                        <li>CHCP Training on Data collection format</li>
+                        <li>Refresher training for the CHCPs</li>
+                        <li>HA & FWA Training</li>
+                        <li>Training on different level supervisors</li>
+
+                    </ul>
                 </div>
                 <div className='mt-4'>
                     <h5>*Foreign Training</h5>
-                    <li>Community Clinic</li>
-                    <li>UMedical Waste Management</li>
-                    <li>Urban Health</li>
-                    <li>Tribal Health</li>
+                    <ul>
+                        <li>Community Clinic</li>
+                        <li>UMedical Waste Management</li>
+                        <li>Urban Health</li>
+                        <li>Tribal Health</li>
+                    </ul>
+
                 </div>
                 <div className='mt-4'>
                     <h5>*Training of JICA (2019-2022)</h5>
-                    <li>Community Group (CG) Training</li>
-                    <li>Community Support Group (CSG) Training</li>
-                    <li>Training of Local Government Representative</li>
-                    <li>Training on different level supervisors</li>
-                    <li>Supervision & Monitoring</li>
+                    <ul>
+                        <li>Community Group (CG) Training</li>
+                        <li>Community Support Group (CSG) Training</li>
+                        <li>Training of Local Government Representative</li>
+                        <li>Training on different level supervisors</li>
+                        <li>Supervision & Monitoring</li>
+                    </ul>
                 </div>
 
             </div>

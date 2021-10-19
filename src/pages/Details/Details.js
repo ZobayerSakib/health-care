@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-
+import './Details.css'
 const Details = () => {
     const { serviceId } = useParams();
-    console.log(serviceId)
-    const [detail, setDetail] = useState([]);
-    useEffect(() => {
-        const url = (`services.json${serviceId}`)
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setDetail(data))
-    }, [])
 
     return (
-        <div>
-            <p>{detail}</p>
+        <div className='text-center mt-3 details'>
+            <h4> Our service number {serviceId}</h4>
             <Link to='/home'>Go Back</Link>
-
         </div>
     );
 };

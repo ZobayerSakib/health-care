@@ -1,10 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Login.css'
 
 const Login = () => {
     const { signInWithGoogle, emailChangeHandling, passwordChangeHandling, signInWithEmailAndPassword, error } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.form || '/home';
+
+
+    const handleGoogleSign = () => {
+        signInWithGoogle()
+            .then(result => {
+                history.push(redirect_uri)
+            })
+    }
     return (
         <>
 
@@ -22,7 +33,7 @@ const Login = () => {
 
                     <p>Are you a new user? <Link to='/register'>Create a account</Link></p>
                     <h4 className='text-center or'>------or--------</h4>
-                    <button onClick={signInWithGoogle}>Sign In With Google</button>
+                    <button onClick={handleGoogleSign}>Sign In With Google</button>
 
                 </form>
 
