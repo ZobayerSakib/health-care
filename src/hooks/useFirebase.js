@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import initializeAuthentication from "../firebase/firebase.init";
 
 initializeAuthentication();
@@ -10,6 +10,7 @@ const useFirebase = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('')
     const [services, setServices] = useState([]);
+
 
     //fake user data from local json file
     useEffect(() => {
@@ -80,10 +81,10 @@ const useFirebase = () => {
                 setError(error.message)
             })
 
-    }
 
-    // Checking user email and password
-    const signInWithEmailAndPassword = () => {
+    }
+    const login = event => {
+        event.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUser(result.user);
@@ -94,16 +95,20 @@ const useFirebase = () => {
             })
     }
 
+    // Checking user email and password
+
+
     return {
         services,
         user,
         error,
+        login,
         signInWithGoogle,
         signOutGoogle,
         emailChangeHandling,
         passwordChangeHandling,
         handleRegistration,
-        signInWithEmailAndPassword
+
 
     }
 
