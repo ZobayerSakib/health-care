@@ -11,8 +11,7 @@ const useFirebase = () => {
     const [error, setError] = useState('')
     const [services, setServices] = useState([]);
 
-
-
+    //fake user data from local json file
     useEffect(() => {
         const url = `services.json`;
         fetch(url)
@@ -20,10 +19,12 @@ const useFirebase = () => {
             .then(data => setServices(data))
     }, [])
 
+    // google authentication
     const googleProvider = new GoogleAuthProvider();
 
     const auth = getAuth();
     const signInWithGoogle = () => {
+        // setLoading(true)
         return signInWithPopup(auth, googleProvider)
 
     }
@@ -57,9 +58,12 @@ const useFirebase = () => {
     const passwordChangeHandling = event => {
         setPassword(event.target.value)
     }
+
+    //Registration button handling
     const handleRegistration = event => {
+
         event.preventDefault();
-        console.log(email, password);
+        // console.log(email, password);
         if (password.length < 6) {
             setError('Password is too short. Need 6 Characters must')
             return;
@@ -67,7 +71,8 @@ const useFirebase = () => {
 
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
-                console.log(result.user)
+                // console.log(result.user)
+                setUser(result.user)
                 setError('')
 
             })
@@ -78,10 +83,10 @@ const useFirebase = () => {
     }
 
     // Checking user email and password
-    const signInWithEmailAndPassword = (email, password) => {
+    const signInWithEmailAndPassword = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                console.log(result.user);
+                setUser(result.user);
                 setError('')
             })
             .catch(error => {

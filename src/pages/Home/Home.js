@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 import Service from '../Service/Service';
 import './Home.css'
 
 const Home = () => {
-    const { services } = useFirebase();
+    const { services } = useAuth();
     return (
         <>
             {/* ---------Home page banner section --------------*/}
