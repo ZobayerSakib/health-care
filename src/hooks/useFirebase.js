@@ -27,22 +27,29 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider)
 
     }
+
+    //Observing  user state change 
+
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
+        const unsubscribed = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user)
             } else {
                 setUser({})
             }
         })
+        return () => unsubscribed;
     }, [])
 
+    // user signOut 
     const signOutGoogle = () => {
         signOut(auth)
             .then(() => {
                 setUser({})
             })
     }
+
+    //Collect email and password from user
 
     const emailChangeHandling = event => {
         setEmail(event.target.value)
@@ -57,6 +64,7 @@ const useFirebase = () => {
             setError('Password is too short. Need 6 Characters must')
             return;
         }
+
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 console.log(result.user)
@@ -68,6 +76,8 @@ const useFirebase = () => {
             })
 
     }
+
+    // Checking user email and password
     const signInWithEmailAndPassword = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {

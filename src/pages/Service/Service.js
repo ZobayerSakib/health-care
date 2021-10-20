@@ -2,8 +2,8 @@ import React from 'react';
 import 'animate.css';
 import './Service.css'
 import { Link } from 'react-router-dom';
-const Service = (props) => {
-    const { id, name, image, description } = props.service;
+const Service = ({ service }) => {
+    const { id, name, image, description } = service;
     const url = `/details/${id}`
     return (
         <div className='serviceDivDesign mt-4 mb-4 m-3'>
